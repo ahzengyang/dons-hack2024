@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="park.css" />
+    <link rel="stylesheet" href="nav-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="park.js"></script>
+    <title>Park</title>
+  </head>
+  <body>
+    <div id="nav-container">
+      <div id="logo"><a class="home" href="home.html">SF Parking</a></div>
+      <nav id="large-nav">
+        <div id="left"></div>
+        <div id="right">
+          <ul class="nav-links">
+            <li><a href="park.html">Park</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="underline" href="help.html">Help</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="section-div">
+      <div id="left">
+        <div class="text">
+          <div class="title">Park anywhere with SF PARK</div>
+          <div class="para">Just search, request and park!</div>
+          <div class="search">
+            <p>Select your car size:</p>
+            <form class="select_form">
+              <input
+                type="radio"
+                id="small"
+                name="car_size"
+                value="Small"
+                required
+              />
+              <label for="s">Small</label>
+              <input
+                type="radio"
+                id="medium"
+                name="car_size"
+                value="Medium"
+                required
+              />
+              <label for="m">Medium</label>
+              <input
+                type="radio"
+                id="large"
+                name="car_size"
+                value="Large"
+                required
+              />
+              <label for="l">Large</label>
+              <br /><br />
+              <label for="lplate">License Plate:</label><br />
+              <input type="text" id="lplate" name="lplate" required />
+              <br /><br /><br />
+              <br />
+              <label for="locationInput"
+                >Enter The Adress you wish to park at:</label
+              ><br />
+              <input
+                type="text"
+                id="locationInput"
+                name="locationInput"
+                placeholder="Enter address"
+              />
+              <button onclick="getCurrentLocation()">
+                Use Current Location
+              </button>
+              <br /><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="your-image-path.jpg" alt="Image description" />
+    </div>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@media screen and (max-width: 720px) {
+    /* body {
+      overflow-x: hidden; 
+    } */
+  
+    #large-nav {
+      display: none;
+    }
+  
+    .section-div {
+      flex-direction: column;
+    }
+  
+    .image,
+    .text {
+      width: 100%;
+      padding-top: 0;
+    }
+  
+    #hero {
+      padding: 1rem;
+    } 
+  }
+  

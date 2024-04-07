@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create your listing</title>
+    <link rel="stylesheet" href="nav-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="rent.js"></script>
+  </head>
+  <body>
+    <div id="nav-container">
+      <div id="logo"><a class="home" href="home.html">SF Parking</a></div>
+      <nav id="large-nav">
+        <div id="left"></div>
+        <div id="right">
+          <ul class="nav-links">
+            <li><a href="park.html">Park</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="underline" href="help.html">Help</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <p>Select your parking space size:</p>
+
+      <form class="select_form">
+        <input
+          type="radio"
+          id="small"
+          name="space_size"
+          value="Small"
+          required
+        />
+        <label for="s">Small</label>
+        <input
+          type="radio"
+          id="medium"
+          name="space_size"
+          value="Medium"
+          required
+        />
+        <label for="m">Medium</label>
+        <input
+          type="radio"
+          id="large"
+          name="space_size"
+          value="Large"
+          required
+        />
+        <label for="l">Large</label>
+        <br /><br />
+        <label for="address">Address:</label><br />
+        <input type="text" id="address" name="address" required />
+        <br /><br />
+        <label for="start">Available from:</label><br />
+        <input type="time" id="start" name="start" required /><br />
+        <label for="end">Until:</label><br />
+        <input type="time" id="end" name="end" required />
+        <br /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <form class="select_form">
+        <label for="address">Address:</label><br />
+        <input type="text" id="address" name="address" required />
+        <br /><br />
+        <label for="start">From:</label><br />
+        <input type="time" id="start" name="start" required /><br />
+        <label for="end">Until:</label><br />
+        <input type="time" id="end" name="end" required />
+        <br /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
